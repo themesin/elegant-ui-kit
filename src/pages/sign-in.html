@@ -1,0 +1,55 @@
+<html lang="en">
+@@include("./_header.html", {"path":"..", "title":"elegant Bootstrap UI kit by Themesin"})
+
+<body class="d-flex h-100">
+    <div class="d-flex p-4 flex-column mx-auto w-100 h-100" style="max-width: 42rem;">
+        <header class="mb-auto text-center">
+            <a href="#!" class="navbar-brand">
+                <img src="../assets/img/logo.svg" alt="logo">
+            </a>
+        </header>
+        <main>
+
+            <div class="px-1">  
+                <div class="d-flex flex-column flex-sm-row justify-content-sm-center mb-4">
+                    <button class="btn btn-oauth btn-sm mt-3 me-2" type="button">
+                        <img src="../assets/img/logos/google-logo.svg" alt="google-logo">
+                        <span class="text-dark">login via Google</span>
+                    </button>
+                    <button class="btn btn-oauth btn-sm mt-3" type="button">
+                        <img src="../assets/img/logos/github-logo.svg" alt="github-logo">
+                        <span class="text-dark">login via Github</span>
+                    </button>
+                </div>
+
+                <form action="" class="px-1">
+                    <div class="form-group mb-4">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control form-control-highlight" required placeholder="Email">
+                    </div>
+                    <div class="form-group mb-1">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control form-control-highlight" required
+                            placeholder="Password">
+                    </div>
+                    <div class="d-flex justify-content-end mb-3">
+                        <a href="../pages/forgot-password.html" class="text-secondary h6">Forgot Password?</a>
+                    </div>
+                    <div class="form-group d-grid">
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+        <footer class="mt-auto">
+            <div class="d-flex justify-content-center">
+                <a href="../pages/sign-up.html" class="text-primary text-capitalize h6">Sign up for free</a>
+            </div>
+        </footer>
+    </div>
+
+    @@include("./_scripts.html", {"path":".."})
+</body>
+
+</html>
